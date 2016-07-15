@@ -20,7 +20,7 @@ J = 0;
 % disp '--y--'
 % y
 
-hyp = (theta' * X')';
+hyp = X * theta;
 deltas = (hyp - y) .^ 2;
 J = sum(deltas) / (2 * m);
 
