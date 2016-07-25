@@ -21,7 +21,7 @@ grad = zeros(size(theta));
 % Start with the unregularized cost function, since regularization is additive
 [J, grad] = costFunction(theta, X, y);
 
-% We do no normalize theta_0, so start at base + 1 for all normalization
+% We do not normalize Theta0, so start at base + 1 for all normalization
 J += (lambda / (2 * m)) * sum(theta(2:end) .^ 2);
 grad(2:end) += (lambda / m) * theta(2:end);
 
