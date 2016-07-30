@@ -48,7 +48,6 @@ grad(2:end) += (lambda / m) * theta(2:end);
 
 % =============================================================
 
-% TODO: Is this necessary? Why?
 grad = grad(:);
 
 end

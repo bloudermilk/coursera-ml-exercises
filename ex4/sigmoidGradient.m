@@ -14,15 +14,11 @@ g = zeros(size(z));
 
 
 
+% Compute the normal sigmoid function, elementwise
+sig = 1 ./ (1 + exp(-z));
 
-
-
-
-
-
-
-
-
+% Compute the gradient, elementwise
+g = sig .* (1 .- sig);
 
 
 % =============================================================
